@@ -60,9 +60,12 @@ namespace CPE200Lab1
                         return result.ToString("N" + remainLength);
                     }
                     break;
+
                 case "%":
-                    //your code here
-                    break;
+                    return (Convert.ToDouble(firstOperand) / 100).ToString();
+                       
+
+                  //  break;
             }
             return "E";
         }
@@ -124,7 +127,7 @@ namespace CPE200Lab1
                     break;
                 case "%":
                     // your code here
-                    break;
+              break;
             }
             isAllowBack = false;
         }
@@ -226,6 +229,11 @@ namespace CPE200Lab1
                     lblDisplay.Text = "0";
                 }
             }
+        }
+
+        private void lblDisplay_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
